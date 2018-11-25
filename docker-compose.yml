@@ -1,0 +1,27 @@
+version: '3'
+services:
+  spring-server:
+    container_name: spring-server
+    build: .
+    ports:
+    - "8080:8080"
+    - "8000:8000"
+    links:
+    - db
+
+  db:
+    container_name: db
+    build: db
+    expose:
+    - "5432"
+    ports:
+    - "5434:5432"
+
+  adminer:
+    container_name: dbAdmin
+    image: adminer
+    restart: always
+    ports:
+    - 8082:8080
+    links:
+    - db
