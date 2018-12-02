@@ -4,5 +4,5 @@ COPY docker-entrypoint-initdb.d /docker-entrypoint-initdb.d
 
 ENV POSTGRES_USER user1
 ENV POSTGRES_PASSWORD 12345
-ENV POSTGRES_DB freeRealEstate
+ENV POSTGRES_DB freerealestate
 

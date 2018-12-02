@@ -1,5 +1,9 @@
-FROM openjdk:8u181-jdk-alpine3.8
+FROM maven:3.6.0-jdk-8-alpine
 
-COPY target/freerealestate-0.0.1-SNAPSHOT.jar /myapp/server.jar
+COPY . /myapp
 
-ENTRYPOINT ["java", "-jar", "/myapp/server.jar"]
+WORKDIR /myapp
+
+RUN cat /myapp/runner.sh
+
+#ENTRYPOINT ["java", "-jar", "/myapp/target/*.jar"]

@@ -3,6 +3,10 @@ services:
   spring-server:
     container_name: spring-server
     build: .
+    command:
+    - /myapp/runner.sh
+    volumes:
+    - C:/Users/User/.m2:/root/.m2
     ports:
     - "8080:8080"
     - "8000:8000"

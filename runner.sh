@@ -1,0 +1,1 @@
+mvn clean install && java -jar /myapp/target/*.jar
