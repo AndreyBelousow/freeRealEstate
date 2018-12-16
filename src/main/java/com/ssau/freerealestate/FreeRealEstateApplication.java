@@ -15,13 +15,13 @@ import java.util.List;
 
 @SpringBootApplication
 @RestController
-public class FreerealestateApplication {
+public class FreeRealEstateApplication {
 
     final
     UserServiceImpl us;
 
     @Autowired
-    public FreerealestateApplication(UserServiceImpl us) {
+    public FreeRealEstateApplication(UserServiceImpl us) {
         this.us = us;
     }
 
@@ -51,6 +51,6 @@ public class FreerealestateApplication {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(FreerealestateApplication.class, args);
+        SpringApplication.run(FreeRealEstateApplication.class, args);
     }
 }

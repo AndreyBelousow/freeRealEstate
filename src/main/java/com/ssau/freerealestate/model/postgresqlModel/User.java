@@ -1,5 +1,7 @@
 package com.ssau.freerealestate.model.postgresqlModel;
 
+import com.google.gson.annotations.SerializedName;
+
 import javax.persistence.*;
 import java.io.Serializable;
 
@@ -7,20 +9,25 @@ import java.io.Serializable;
 @Table(name = "users")
 public class User implements Serializable {
 
+    @SerializedName("id")
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     private int id;
 
+    @SerializedName("username")
     @Column(name = "username")
     private String username;
 
+    @SerializedName("password")
     @Column(name = "password")
     private String password;
 
+    @SerializedName("token")
     @Column(name = "token")
     private String token;
 
+    @SerializedName("role")
     @Column(name = "role")
     private String role;
 
