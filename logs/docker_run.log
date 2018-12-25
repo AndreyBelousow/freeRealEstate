@@ -1,0 +1,220 @@
+Attaching to db, dbAdmin, spring-server
+[36mdb               |[0m The files belonging to this database system will be owned by user "postgres".
+[36mdb               |[0m This user must also own the server process.
+[36mdb               |[0m 
+[36mdb               |[0m The database cluster will be initialized with locale "en_US.utf8".
+[36mdb               |[0m The default database encoding has accordingly been set to "UTF8".
+[36mdb               |[0m The default text search configuration will be set to "english".
+[36mdb               |[0m 
+[36mdb               |[0m Data page checksums are disabled.
+[36mdb               |[0m 
+[36mdb               |[0m fixing permissions on existing directory /var/lib/postgresql/data ... ok
+[36mdb               |[0m creating subdirectories ... ok
+[36mdb               |[0m selecting default max_connections ... 100
+[33mdbAdmin          |[0m PHP 7.2.12 Development Server started at Sun Dec  2 19:18:42 2018
+[36mdb               |[0m selecting default shared_buffers ... 128MB
+[36mdb               |[0m selecting dynamic shared memory implementation ... posix
+[36mdb               |[0m creating configuration files ... ok
+[36mdb               |[0m running bootstrap script ... ok
+[36mdb               |[0m performing post-bootstrap initialization ... sh: locale: not found
+[36mdb               |[0m 2018-12-02 19:18:41.524 UTC [28] WARNING:  no usable system locales were found
+[36mdb               |[0m ok
+[36mdb               |[0m syncing data to disk ... ok
+[36mdb               |[0m 
+[36mdb               |[0m Success. You can now start the database server using:
+[36mdb               |[0m 
+[36mdb               |[0m     pg_ctl -D /var/lib/postgresql/data -l logfile start
+[36mdb               |[0m 
+[36mdb               |[0m 
+[36mdb               |[0m WARNING: enabling "trust" authentication for local connections
+[36mdb               |[0m You can change this by editing pg_hba.conf or using the option -A, or
+[36mdb               |[0m --auth-local and --auth-host, the next time you run initdb.
+[36mdb               |[0m waiting for server to start....2018-12-02 19:18:43.109 UTC [32] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mdb               |[0m 2018-12-02 19:18:43.157 UTC [33] LOG:  database system was shut down at 2018-12-02 19:18:42 UTC
+[36mdb               |[0m 2018-12-02 19:18:43.176 UTC [32] LOG:  database system is ready to accept connections
+[36mdb               |[0m  done
+[36mdb               |[0m server started
+[36mdb               |[0m CREATE DATABASE
+[36mdb               |[0m 
+[36mdb               |[0m 
+[36mdb               |[0m /usr/local/bin/docker-entrypoint.sh: running /docker-entrypoint-initdb.d/init_tables.sql
+[36mdb               |[0m CREATE TABLE
+[36mdb               |[0m CREATE TABLE
+[36mdb               |[0m CREATE TABLE
+[36mdb               |[0m CREATE TABLE
+[36mdb               |[0m 
+[36mdb               |[0m 
+[36mdb               |[0m 2018-12-02 19:18:43.888 UTC [32] LOG:  received fast shutdown request
+[36mdb               |[0m waiting for server to shut down....2018-12-02 19:18:43.908 UTC [32] LOG:  aborting any active transactions
+[36mdb               |[0m 2018-12-02 19:18:43.911 UTC [32] LOG:  background worker "logical replication launcher" (PID 39) exited with exit code 1
+[36mdb               |[0m 2018-12-02 19:18:43.914 UTC [34] LOG:  shutting down
+[36mdb               |[0m 2018-12-02 19:18:44.072 UTC [32] LOG:  database system is shut down
+[36mdb               |[0m  done
+[36mdb               |[0m server stopped
+[36mdb               |[0m 
+[36mdb               |[0m PostgreSQL init process complete; ready for start up.
+[36mdb               |[0m 
+[36mdb               |[0m 2018-12-02 19:18:44.125 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mdb               |[0m 2018-12-02 19:18:44.125 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mdb               |[0m 2018-12-02 19:18:44.182 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mdb               |[0m 2018-12-02 19:18:44.269 UTC [45] LOG:  database system was shut down at 2018-12-02 19:18:44 UTC
+[36mdb               |[0m 2018-12-02 19:18:44.289 UTC [1] LOG:  database system is ready to accept connections
+[32mspring-server    |[0m [INFO] Scanning for projects...
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] ----------------------< com.ssau:freerealestate >-----------------------
+[32mspring-server    |[0m [INFO] Building freerealestate 0.0.1-SNAPSHOT
+[32mspring-server    |[0m [INFO] --------------------------------[ jar ]---------------------------------
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] --- maven-clean-plugin:3.1.0:clean (default-clean) @ freerealestate ---
+[32mspring-server    |[0m [INFO] Deleting /myapp/target
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ freerealestate ---
+[32mspring-server    |[0m [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[32mspring-server    |[0m [INFO] Copying 1 resource
+[32mspring-server    |[0m [INFO] Copying 0 resource
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] --- maven-compiler-plugin:3.8.0:compile (default-compile) @ freerealestate ---
+[32mspring-server    |[0m [INFO] Changes detected - recompiling the module!
+[32mspring-server    |[0m [INFO] Compiling 18 source files to /myapp/target/classes
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ freerealestate ---
+[32mspring-server    |[0m [INFO] Using 'UTF-8' encoding to copy filtered resources.
+[32mspring-server    |[0m [INFO] skip non existing resourceDirectory /myapp/src/test/resources
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] --- maven-compiler-plugin:3.8.0:testCompile (default-testCompile) @ freerealestate ---
+[32mspring-server    |[0m [INFO] Changes detected - recompiling the module!
+[32mspring-server    |[0m [INFO] Compiling 1 source file to /myapp/target/test-classes
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] --- maven-surefire-plugin:2.22.1:test (default-test) @ freerealestate ---
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] -------------------------------------------------------
+[32mspring-server    |[0m [INFO]  T E S T S
+[32mspring-server    |[0m [INFO] -------------------------------------------------------
+[32mspring-server    |[0m [INFO] Running com.ssau.freerealestate.FreerealestateApplicationTests
+[32mspring-server    |[0m 19:18:57.301 [main] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class com.ssau.freerealestate.FreerealestateApplicationTests]
+[32mspring-server    |[0m 19:18:57.310 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+[32mspring-server    |[0m 19:18:57.333 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+[32mspring-server    |[0m 19:18:57.378 [main] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.ssau.freerealestate.FreerealestateApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+[32mspring-server    |[0m 19:18:57.453 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ssau.freerealestate.FreerealestateApplicationTests], using SpringBootContextLoader
+[32mspring-server    |[0m 19:18:57.468 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.ssau.freerealestate.FreerealestateApplicationTests]: class path resource [com/ssau/freerealestate/FreerealestateApplicationTests-context.xml] does not exist
+[32mspring-server    |[0m 19:18:57.468 [main] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.ssau.freerealestate.FreerealestateApplicationTests]: class path resource [com/ssau/freerealestate/FreerealestateApplicationTestsContext.groovy] does not exist
+[32mspring-server    |[0m 19:18:57.480 [main] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.ssau.freerealestate.FreerealestateApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[32mspring-server    |[0m 19:18:57.481 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.ssau.freerealestate.FreerealestateApplicationTests]: FreerealestateApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+[32mspring-server    |[0m 19:18:57.718 [main] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.ssau.freerealestate.FreerealestateApplicationTests]
+[32mspring-server    |[0m 19:18:58.036 [main] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/myapp/target/classes/com/ssau/freerealestate/FreerealestateApplication.class]
+[32mspring-server    |[0m 19:18:58.038 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.ssau.freerealestate.FreerealestateApplication for test class com.ssau.freerealestate.FreerealestateApplicationTests
+[32mspring-server    |[0m 19:18:58.273 [main] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.ssau.freerealestate.FreerealestateApplicationTests]: using defaults.
+[32mspring-server    |[0m 19:18:58.273 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[32mspring-server    |[0m 19:18:58.425 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@34123d65, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@59474f18, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@65fb9ffc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3e694b3f, org.springframework.test.context.support.DirtiesContextTestExecutionListener@1bb5a082, org.springframework.test.context.transaction.TransactionalTestExecutionListener@78691363, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@41d477ed, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@3590fc5b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@397fbdb, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@33d512c1, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@515c6049, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@639c2c1d]
+[32mspring-server    |[0m 19:18:58.438 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ssau.freerealestate.FreerealestateApplicationTests]
+[32mspring-server    |[0m 19:18:58.439 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ssau.freerealestate.FreerealestateApplicationTests]
+[32mspring-server    |[0m 19:18:58.442 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ssau.freerealestate.FreerealestateApplicationTests]
+[32mspring-server    |[0m 19:18:58.442 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ssau.freerealestate.FreerealestateApplicationTests]
+[32mspring-server    |[0m 19:18:58.443 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ssau.freerealestate.FreerealestateApplicationTests]
+[32mspring-server    |[0m 19:18:58.444 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ssau.freerealestate.FreerealestateApplicationTests]
+[32mspring-server    |[0m 19:18:58.454 [main] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@3c41ed1d testClass = FreerealestateApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@54d9d12d testClass = FreerealestateApplicationTests, locations = '{}', classes = '{class com.ssau.freerealestate.FreerealestateApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@74a10858, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@4e718207, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@150c158, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4c762604], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+[32mspring-server    |[0m 19:18:58.457 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [com.ssau.freerealestate.FreerealestateApplicationTests]
+[32mspring-server    |[0m 19:18:58.457 [main] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [com.ssau.freerealestate.FreerealestateApplicationTests]
+[32mspring-server    |[0m 19:18:58.539 [main] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true, server.port=-1}
+[32mspring-server    |[0m 
+[32mspring-server    |[0m   .   ____          _            __ _ _
+[32mspring-server    |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[32mspring-server    |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[32mspring-server    |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[32mspring-server    |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[32mspring-server    |[0m  =========|_|==============|___/=/_/_/_/
+[32mspring-server    |[0m  :: Spring Boot ::        (v2.1.0.RELEASE)
+[32mspring-server    |[0m 
+[32mspring-server    |[0m 2018-12-02 19:19:00.047  INFO 46 --- [           main] c.s.f.FreerealestateApplicationTests     : Starting FreerealestateApplicationTests on 25c33df4d286 with PID 46 (started by root in /myapp)
+[32mspring-server    |[0m 2018-12-02 19:19:00.066  INFO 46 --- [           main] c.s.f.FreerealestateApplicationTests     : No active profile set, falling back to default profiles: default
+[32mspring-server    |[0m 2018-12-02 19:19:02.487  INFO 46 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+[32mspring-server    |[0m 2018-12-02 19:19:02.616  INFO 46 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107ms. Found 4 repository interfaces.
+[32mspring-server    |[0m 2018-12-02 19:19:03.537  INFO 46 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d21dfbd5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mspring-server    |[0m 2018-12-02 19:19:04.410  INFO 46 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[32mspring-server    |[0m 2018-12-02 19:19:04.489  INFO 46 --- [           main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc42.Jdbc42Connection.getNetworkTimeout() is not yet implemented.)
+[32mspring-server    |[0m 2018-12-02 19:19:04.523  INFO 46 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[32mspring-server    |[0m 2018-12-02 19:19:04.643  INFO 46 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+[32mspring-server    |[0m 	name: default
+[32mspring-server    |[0m 	...]
+[32mspring-server    |[0m 2018-12-02 19:19:04.985  INFO 46 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+[32mspring-server    |[0m 2018-12-02 19:19:04.989  INFO 46 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+[32mspring-server    |[0m 2018-12-02 19:19:05.376  INFO 46 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[32mspring-server    |[0m 2018-12-02 19:19:05.590  INFO 46 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[32mspring-server    |[0m 2018-12-02 19:19:05.626  INFO 46 --- [           main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+[32mspring-server    |[0m 2018-12-02 19:19:05.640  INFO 46 --- [           main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@7afc4db9
+[32mspring-server    |[0m 2018-12-02 19:19:06.558  INFO 46 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32mspring-server    |[0m 2018-12-02 19:19:08.113  INFO 46 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+[32mspring-server    |[0m 2018-12-02 19:19:08.185  WARN 46 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32mspring-server    |[0m 2018-12-02 19:19:08.969  INFO 46 --- [           main] c.s.f.FreerealestateApplicationTests     : Started FreerealestateApplicationTests in 10.381 seconds (JVM running for 12.624)
+[32mspring-server    |[0m [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 12.034 s - in com.ssau.freerealestate.FreerealestateApplicationTests
+[32mspring-server    |[0m 2018-12-02 19:19:09.125  INFO 46 --- [       Thread-3] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+[32mspring-server    |[0m 2018-12-02 19:19:09.132  INFO 46 --- [       Thread-3] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+[32mspring-server    |[0m 2018-12-02 19:19:09.137  INFO 46 --- [       Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+[32mspring-server    |[0m 2018-12-02 19:19:09.155  INFO 46 --- [       Thread-3] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] Results:
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] --- maven-jar-plugin:3.1.0:jar (default-jar) @ freerealestate ---
+[32mspring-server    |[0m [INFO] Building jar: /myapp/target/freerealestate-0.0.1-SNAPSHOT.jar
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] --- spring-boot-maven-plugin:2.1.0.RELEASE:repackage (repackage) @ freerealestate ---
+[32mspring-server    |[0m [INFO] Replacing main artifact /myapp/target/freerealestate-0.0.1-SNAPSHOT.jar
+[32mspring-server    |[0m [INFO] 
+[32mspring-server    |[0m [INFO] --- maven-install-plugin:2.5.2:install (default-install) @ freerealestate ---
+[32mspring-server    |[0m [INFO] Installing /myapp/target/freerealestate-0.0.1-SNAPSHOT.jar to /root/.m2/repository/com/ssau/freerealestate/0.0.1-SNAPSHOT/freerealestate-0.0.1-SNAPSHOT.jar
+[32mspring-server    |[0m [INFO] Installing /myapp/pom.xml to /root/.m2/repository/com/ssau/freerealestate/0.0.1-SNAPSHOT/freerealestate-0.0.1-SNAPSHOT.pom
+[32mspring-server    |[0m [INFO] ------------------------------------------------------------------------
+[32mspring-server    |[0m [INFO] BUILD SUCCESS
+[32mspring-server    |[0m [INFO] ------------------------------------------------------------------------
+[32mspring-server    |[0m [INFO] Total time:  28.645 s
+[32mspring-server    |[0m [INFO] Finished at: 2018-12-02T19:19:14Z
+[32mspring-server    |[0m [INFO] ------------------------------------------------------------------------
+[32mspring-server    |[0m 
+[32mspring-server    |[0m   .   ____          _            __ _ _
+[32mspring-server    |[0m  /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+[32mspring-server    |[0m ( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+[32mspring-server    |[0m  \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+[32mspring-server    |[0m   '  |____| .__|_| |_|_| |_\__, | / / / /
+[32mspring-server    |[0m  =========|_|==============|___/=/_/_/_/
+[32mspring-server    |[0m  :: Spring Boot ::        (v2.1.0.RELEASE)
+[32mspring-server    |[0m 
+[32mspring-server    |[0m 2018-12-02 19:19:15.887  INFO 90 --- [           main] c.s.f.FreerealestateApplication          : Starting FreerealestateApplication v0.0.1-SNAPSHOT on 25c33df4d286 with PID 90 (/myapp/target/freerealestate-0.0.1-SNAPSHOT.jar started by root in /myapp)
+[32mspring-server    |[0m 2018-12-02 19:19:15.892  INFO 90 --- [           main] c.s.f.FreerealestateApplication          : No active profile set, falling back to default profiles: default
+[32mspring-server    |[0m 2018-12-02 19:19:17.355  INFO 90 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+[32mspring-server    |[0m 2018-12-02 19:19:17.514  INFO 90 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 149ms. Found 4 repository interfaces.
+[32mspring-server    |[0m 2018-12-02 19:19:18.163  INFO 90 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$43bec851] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[32mspring-server    |[0m 2018-12-02 19:19:19.573  INFO 90 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+[32mspring-server    |[0m 2018-12-02 19:19:19.748  INFO 90 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+[32mspring-server    |[0m 2018-12-02 19:19:19.750  INFO 90 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+[32mspring-server    |[0m 2018-12-02 19:19:19.801  INFO 90 --- [           main] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64/server:/usr/lib/jvm/java-1.8-openjdk/jre/lib/amd64:/usr/lib/jvm/java-1.8-openjdk/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib]
+[32mspring-server    |[0m 2018-12-02 19:19:20.172  INFO 90 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+[32mspring-server    |[0m 2018-12-02 19:19:20.173  INFO 90 --- [           main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 4142 ms
+[32mspring-server    |[0m 2018-12-02 19:19:20.338  INFO 90 --- [           main] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+[32mspring-server    |[0m 2018-12-02 19:19:20.345  INFO 90 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+[32mspring-server    |[0m 2018-12-02 19:19:20.357  INFO 90 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[32mspring-server    |[0m 2018-12-02 19:19:20.358  INFO 90 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+[32mspring-server    |[0m 2018-12-02 19:19:20.358  INFO 90 --- [           main] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+[32mspring-server    |[0m 2018-12-02 19:19:21.273  INFO 90 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+[32mspring-server    |[0m 2018-12-02 19:19:21.500  INFO 90 --- [           main] com.zaxxer.hikari.pool.PoolBase          : HikariPool-1 - Driver does not support get/set network timeout for connections. (Method org.postgresql.jdbc42.Jdbc42Connection.getNetworkTimeout() is not yet implemented.)
+[32mspring-server    |[0m 2018-12-02 19:19:21.585  INFO 90 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+[32mspring-server    |[0m 2018-12-02 19:19:21.867  INFO 90 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+[32mspring-server    |[0m 	name: default
+[32mspring-server    |[0m 	...]
+[32mspring-server    |[0m 2018-12-02 19:19:22.121  INFO 90 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+[32mspring-server    |[0m 2018-12-02 19:19:22.124  INFO 90 --- [           main] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+[32mspring-server    |[0m 2018-12-02 19:19:22.584  INFO 90 --- [           main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+[32mspring-server    |[0m 2018-12-02 19:19:22.889  INFO 90 --- [           main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+[32mspring-server    |[0m 2018-12-02 19:19:22.918  INFO 90 --- [           main] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000422: Disabling contextual LOB creation as connection was null
+[32mspring-server    |[0m 2018-12-02 19:19:22.928  INFO 90 --- [           main] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@696da30b
+[32mspring-server    |[0m 2018-12-02 19:19:24.158  INFO 90 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+[32mspring-server    |[0m 2018-12-02 19:19:24.935  INFO 90 --- [           main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+[32mspring-server    |[0m 2018-12-02 19:19:25.007  WARN 90 --- [           main] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[32mspring-server    |[0m 2018-12-02 19:19:25.663  INFO 90 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+[32mspring-server    |[0m 2018-12-02 19:19:25.667  INFO 90 --- [           main] c.s.f.FreerealestateApplication          : Started FreerealestateApplication in 10.478 seconds (JVM running for 11.386)
+[32mspring-server    |[0m 2018-12-02 19:19:30.165  INFO 90 --- [nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+[32mspring-server    |[0m 2018-12-02 19:19:30.166  INFO 90 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+[32mspring-server    |[0m 2018-12-02 19:19:30.188  INFO 90 --- [nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+[32mspring-server    |[0m 2018-12-02 19:19:34.541  INFO 90 --- [nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory

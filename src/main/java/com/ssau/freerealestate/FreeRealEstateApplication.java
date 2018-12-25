@@ -25,10 +25,10 @@ public class FreeRealEstateApplication {
         this.us = us;
     }
 
-    @RequestMapping("/")
+    /*@RequestMapping("/")
     public String welcome() {
         return "Welcome to osu!";
-    }
+    }*/
 
     @RequestMapping("/fuckers/add")
     public String addSomeOne() {

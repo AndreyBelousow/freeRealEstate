@@ -4,6 +4,7 @@ import com.ssau.freerealestate.model.postgresqlModel.services.impl.PostServiceIm
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 @RequestMapping(value = "/api/posts")
@@ -13,6 +14,7 @@ public class PostsRESTController {
 
     @Autowired
     public PostsRESTController(PostServiceImpl ps){postService = ps;}
+/*
 
     @RequestMapping(value = "/add")
     public void addPost(@RequestParam("postId") String postId,
@@ -50,9 +52,10 @@ public class PostsRESTController {
         user.setRole(role);
         userService.update(user);
     }
+*/
 
-    @RequestMapping("/delete")
+   /* @RequestMapping("/delete")
     public void deleteUser(@RequestParam("userId") String userId){
         userService.delete(Integer.parseInt(userId));
-    }
+    }*/
 }

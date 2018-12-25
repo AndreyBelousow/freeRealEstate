@@ -1,0 +1,30 @@
+Step 1/5 : FROM postgres:11.1-alpine
+ ---> daa3d8ceab8f
+Step 2/5 : COPY docker-entrypoint-initdb.d /docker-entrypoint-initdb.d
+ ---> Using cache
+ ---> 23cb340e7242
+Step 3/5 : ENV POSTGRES_USER user1
+ ---> Using cache
+ ---> fca6ffebd140
+Step 4/5 : ENV POSTGRES_PASSWORD 12345
+ ---> Using cache
+ ---> 5711b66914a9
+Step 5/5 : ENV POSTGRES_DB freerealestate
+ ---> Using cache
+ ---> b16a7edfebbf
+Successfully built b16a7edfebbf
+Successfully tagged freerealestate_db:latest
+Step 1/4 : FROM maven:3.6.0-jdk-8-alpine
+ ---> b3f92f93bc47
+Step 2/4 : COPY . /myapp
+ ---> 4c426076a7b2
+Step 3/4 : WORKDIR /myapp
+ ---> Running in 8800e696496c
+Removing intermediate container 8800e696496c
+ ---> a9b3e75e085c
+Step 4/4 : RUN cat /myapp/runner.sh
+ ---> Running in 1c5758c738ee
+mvn clean install && java -jar /myapp/target/*.jarRemoving intermediate container 1c5758c738ee
+ ---> 82b92ba8b770
+Successfully built 82b92ba8b770
+Successfully tagged freerealestate_spring-server:latest
