@@ -30,7 +30,7 @@ public class FreeRealEstateApplication {
         return "Welcome to osu!";
     }*/
 
-    @RequestMapping("/fuckers/add")
+   /* @RequestMapping("/fuckers/add")
     public String addSomeOne() {
         for (int i = 0; i < 10; i++) {
             User user = new User();
@@ -49,7 +49,7 @@ public class FreeRealEstateApplication {
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         return gson.toJson(users);
     }
-
+*/
     public static void main(String[] args) {
         SpringApplication.run(FreeRealEstateApplication.class, args);
     }

@@ -36,7 +36,7 @@ public class PostServiceImpl implements PostService {
 
     @Override
     public Post getById(int id) {
-        return repository.getOne(id);
+        return repository.findById(id).get();
     }
 
     @Override
